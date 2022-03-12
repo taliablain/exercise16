@@ -23,3 +23,7 @@ class BankAccount:
 
     def getbalance(self):
         return self._balance
+
+    def balance_in_euros(self, initial):
+        self._balance = initial * 1.19
+        return self._balance

@@ -32,3 +32,6 @@ try:
     balance3.withdraw(200)
 except:
     balance3.withdraw(21)
+
+balance4 = BankAccount(211)
+print(balance4.balance_in_euros(211))
