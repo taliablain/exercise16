@@ -19,3 +19,16 @@ print(savings.amount_with_interest(200))
 
 student = StudentAccount(321)
 print(student.available_amount(321))
+
+balance2 = StudentAccount(90)
+balance2.deposit(32)
+print(balance2.getbalance())
+
+#next steps, make it so that it can show balance with interest, without needing the
+#input 'initial'
+
+balance3 = BankAccount(21)
+try:
+    balance3.withdraw(200)
+except:
+    balance3.withdraw(21)
