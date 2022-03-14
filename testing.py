@@ -1,9 +1,7 @@
-from customer import Customer
-from employee import Employee
-from bankaccount import BankAccount
-from savings import SavingsAccount
-from currentaccount import CurrentAccount
-from studentaccount import StudentAccount
+from users.customer import Customer
+from accounts.bankaccount import BankAccount
+from accounts.savings import SavingsAccount
+from accounts.studentaccount import StudentAccount
 
 customer = Customer('talia', 'personal', '8%', '2 years')
 ##print(customer.display())
@@ -26,6 +24,9 @@ print(balance2.getbalance())
 
 #next steps, make it so that it can show balance with interest, without needing the
 #input 'initial'
+#neater formatting and display needed
+#tidying up
+
 
 balance3 = BankAccount(21)
 try:

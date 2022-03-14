@@ -1,4 +1,4 @@
-from bankaccount import BankAccount
+from accounts.bankaccount import BankAccount
 
 class CurrentAccount(BankAccount):
     def __init__(self, initial):

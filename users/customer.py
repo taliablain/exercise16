@@ -1,4 +1,4 @@
-from person import Person
+from users.person import Person
 class Customer(Person):
     #private
     _name = ''
