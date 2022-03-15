@@ -13,17 +13,21 @@ class BankAccount:
 
     def deposit(self, amount):
         self._balance += amount
+        print(f'available funds: £{self._balance}')
         return
 
     def withdraw(self, amount):
         if amount > self._balance:
             raise InsufficientFunds
-            self._balance -= amount
-        return
+        self._balance -= amount
+        print(f'remaining funds: £{self._balance}')
+
 
     def getbalance(self):
+        print(f'available funds: £{self._balance}')
         return self._balance
 
     def balance_in_euros(self, initial):
         self._balance = initial * 1.19
+        print(f'balance in euros: €{self._balance}')
         return self._balance

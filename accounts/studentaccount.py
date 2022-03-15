@@ -6,4 +6,5 @@ class StudentAccount(BankAccount):
 
     def available_amount(self, initial):
         self._balance = int(initial + 1000)
+        print(f'total available funds: £{self._balance}')
         return  self._balance

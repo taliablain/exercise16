@@ -6,6 +6,7 @@ class SavingsAccount(BankAccount):
 
     def amount_with_interest(self, initial):
         self._balance = int(initial * 1.006)
+        print(f'balance with interest: £{self._balance}')
         return self._balance
 
 

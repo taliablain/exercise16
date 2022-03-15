@@ -6,4 +6,5 @@ class CurrentAccount(BankAccount):
 
     def amount_with_interest(self, initial):
         self._balance = int(initial * 0)
+        print(f'balance with interest: £{self._balance}')
         return  self._balance
