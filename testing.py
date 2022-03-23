@@ -3,12 +3,14 @@ from accounts.bankaccount import BankAccount
 from accounts.savings import SavingsAccount
 from accounts.studentaccount import StudentAccount
 from users.employee import Employee
+from accounts.insufficientfunds import InsufficientFunds
 
 
 customer = Customer('talia', 'personal', '8%', '2 years')
 
 
-employee = Employee('talia', 'finance', 'analyst', 'graduate', '9%')
+talia = Employee('talia', 'finance', 'analyst', 'graduate', '9%')
+talia.display()
 
 my_account = BankAccount(5000)
 my_account.getbalance()
@@ -16,7 +18,7 @@ my_account.getbalance()
 balance3 = BankAccount(21)
 try:
     balance3.withdraw(200)
-except Insu:
+except:
     balance3.withdraw(21)
 
 savings = SavingsAccount(200)

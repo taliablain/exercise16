@@ -1,8 +1,4 @@
 #from person import Person
-class InsufficientFunds(Exception):
-    print('Insufficient funds in account')
-    pass
-
 
 
 class BankAccount:
